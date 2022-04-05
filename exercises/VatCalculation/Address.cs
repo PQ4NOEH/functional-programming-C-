@@ -1,1 +1,2 @@
-public readonly record struct Address(string Country, string State);
+public record Address(string Country);
+public record UsAddress(string State) : Address("us");
